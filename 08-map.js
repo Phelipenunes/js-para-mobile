@@ -35,9 +35,9 @@ console.log(precosBlackFriday);
 
 /* DESAFIO!
 Gere um novo array de cursos contendo todos os dados anteriores e os preços novos com desconto. */
-const cursosBlackFriday = cursos.map( curso => {
-    return { ...curso, preco: curso.preco - curso.preco * 0.10 }
-} );
+const cursosBlackFriday = cursos.map( curso => 
+    ({ ...curso, preco: curso.preco - curso.preco * 0.10 }) 
+);
 
 console.log(cursosBlackFriday);
 
